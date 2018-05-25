@@ -136,7 +136,7 @@
 			}
       elseif (iStr($text,array("nice", "good", "nice one", "good one", "good job", "great job"))){
         // Good Job
-        $strResponse = aRand($arrPhrasesAfterAfirmative)
+        $strResponse = aRand($arrPhrasesAfterAfirmative);
       }
       else {
         // general response to a mention of the bot

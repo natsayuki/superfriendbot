@@ -37,6 +37,6 @@
   "That was great!",
   "That was a good one!",
   "Alright!"
-  )
+);
 
 ?>
