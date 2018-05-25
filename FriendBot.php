@@ -148,7 +148,7 @@
         $pokemon = array_pop(explode(' ', $text));
         $entry = json_decode(file_get_contents('http://pokeapi.co/api/v2/pokemon/' . $pokemon), true);
         try{
-          $json = json_decode(file_get_contents('https://pokeapi.co/api/v2/'.$entry['species']['url']), true);
+          $json = json_decode(file_get_contents($entry['species']['url']), true);
           $flavor = $json['flavor_text_entries'];
           foreach($flavor as $entry){
           if($entry['version']['name'] == 'blue' && $entry['language']['name'] == 'en'){
