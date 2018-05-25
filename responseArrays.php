@@ -1,17 +1,8 @@
 <?php
   $arrPhrasesBasicResponses = array(
-  "Wood ducks are highly dangerous",
-  "Wood ducks can climb trees",
-  "Download Wood duck simulator",
-  "Wood duck is spooky aminal",
-  "There have been an average 13k recorded deaths from wood ducks every year",
-  "Looking a wood duck in the eyes agrivates it to a point of no return",
-  "Wood ducks get their name because they are ducks made of wood",
-  "Wood ducks only eat human flesh",
-  "Wood ducks only drink human blood",
-  "Wood ducks have poison tipped claws",
-  "If you spot a wood duck, kill it",
-  "Wood ducks cannot fly, only flap their wings and levitate"
+  "Can I help you?",
+  "What do you want?",
+  "That's me."
   );
 
   $arrPhrasesHangOn = array(
@@ -37,12 +28,9 @@
   );
 
   $arrPhrasesPositiveFeedback = array(
-  "Awww :)",
-  "*blush*",
-  "I love you too, I think",
-  "Is 'love' an emotion for humans only?",
-  "For a human, you're pretty attractive",
-  "Wanna go out sometime?"
+  "I love Harrison.",
+  "I only care about Harrison.",
+  "Harrison is my best friend ever."
   );
 
 ?>
