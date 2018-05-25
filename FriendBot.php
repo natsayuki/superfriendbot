@@ -146,7 +146,7 @@
       elseif (iStr($text,array("search the pokedex for", 'pokedex', 'pokedex entry'))){
         // Good Job
         $pokemon = array_pop(explode(' ', $text));
-        $entry = json_decode(file_get_contents('http://pokeapi.co/api/v2/pokemon/' . $pokemon));
+        $entry = json_decode(file_get_contents('http://pokeapi.co/api/v2/pokemon/' . $pokemon), true);
         try{
 
           $strResponse = $pokemon . " has a weight of " . $entry['weight'];
