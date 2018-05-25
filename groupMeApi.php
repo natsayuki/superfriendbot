@@ -5,7 +5,7 @@
     private $baseUrl     = "https://api.groupme.com/v3";
 
     // token used in all API calls
-    private $token  = "__YOUR_TOKEN_HERE__";
+    private $token  = "f98227509bb80135deb47fda6cb3a913";
 
     /**
       *  Curl POST
@@ -419,4 +419,4 @@
       return $this->groupAddUser($groupId,$arrAddToGroup);
     }
   }
-?> 
+?>
