@@ -134,6 +134,10 @@
         // Apology
         $strResponse = aRand($arrPhrasesAfterSorry);
 			}
+      elseif (iStr($text,array("nice", "good", "nice one", "good one", "good job", "great job"))){
+        // Good Job
+        $strResponse = aRand($arrPhrasesAfterAfirmative)
+      }
       else {
         // general response to a mention of the bot
         // Only used if $bMakeGeneralResponses is set to true at the beginning of this file

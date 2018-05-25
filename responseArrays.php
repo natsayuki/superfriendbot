@@ -33,4 +33,10 @@
   "Harrison is my best friend ever."
   );
 
+  $arrPhrasesAfterAfirmative = array(
+  "That was great!",
+  "That was a good one!",
+  "Alright!"
+  )
+
 ?>
