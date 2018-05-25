@@ -138,10 +138,10 @@
         // Good Job
         $strResponse = aRand($arrPhrasesAfterAfirmative);
       }
-      elseif (iStr($text,array("what is the current price of bitcoin"))){
+      elseif (iStr($text,array("what is the current price of bitcoin", 'bitcoin', 'bitcoin price'))){
         // Good Job
         $json = json_decode(file_get_contents("https://api.coindesk.com/v1/bpi/currentprice.json"), true);
-        $strResponse = $json['bpi']['USD']['rate'];
+        $strResponse = "The current price of one Bitcoid is " . $json['bpi']['USD']['rate'] . " USD";
       }
 
       else {
