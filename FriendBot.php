@@ -148,8 +148,13 @@
         $pokemon = array_pop(explode(' ', $text));
         $entry = json_decode(file_get_contents('http://pokeapi.co/api/v2/pokemon/' . $pokemon), true);
         try{
-
-          $strResponse = $pokemon . " has a weight of " . $entry['weight'];
+          $json = json_decode(file_get_contents('https://pokeapi.co/api/v2/'.$entry['species']['url']), true);
+          $flavor = $json['flavor_text_entries'];
+          foreach($flavor as $entry){
+          if($entry['version']['name'] == 'blue' && $entry['language']['name'] == 'en'){
+            $strResponse = $entry['flavor_text'];
+          }
+          }
         }
         catch(Exception $e){
           $strResponse = $pokemon. " is not a valid pokemon";
