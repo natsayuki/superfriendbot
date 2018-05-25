@@ -143,6 +143,19 @@
         $json = json_decode(file_get_contents("https://api.coindesk.com/v1/bpi/currentprice.json"), true);
         $strResponse = "The current price of one Bitcoin is " . $json['bpi']['USD']['rate'] . " USD";
       }
+      elseif (iStr($text,array("search the pokedex for", 'pokedex', 'pokedex entry'))){
+        // Good Job
+        $pokemon = array_pop(explode(' ', $text));
+        $entry = json_decode(file_get_contents('http://pokeapi.co/api/v2/pokemon/' . $pokemon));
+        try{
+
+          $strResponse = $pokemon . " has a weight of " . $entry['weight'];
+        }
+        catch(Exception $e){
+          $strResponse = $pokemon. " is not a valid pokemon";
+        }
+      }
+
 
       else {
         // general response to a mention of the bot
