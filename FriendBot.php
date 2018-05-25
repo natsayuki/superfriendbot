@@ -138,6 +138,12 @@
         // Good Job
         $strResponse = aRand($arrPhrasesAfterAfirmative);
       }
+      elseif (iStr($text,array("what is the current price of bitcoin"))){
+        // Good Job
+        $json = json_decode(file_get_contents("https://api.coindesk.com/v1/bpi/currentprice.json"), true);
+        $strResponse = $json['bpi']['USD']['rate'];
+      }
+
       else {
         // general response to a mention of the bot
         // Only used if $bMakeGeneralResponses is set to true at the beginning of this file

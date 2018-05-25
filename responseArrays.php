@@ -22,9 +22,9 @@
   );
 
   $arrPhrasesAfterSorry = array(
-  "No biggie!",
-  "My feelings aren't hurt. Actually, I don't have feelings, so it's a win-win",
-  "I accept your apology (if that's what you'd call it)"
+  "No problem!",
+  "Don't be sorry!",
+  "It's alright!"
   );
 
   $arrPhrasesPositiveFeedback = array(
